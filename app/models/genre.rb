@@ -5,8 +5,8 @@ class Genre
     @genre = genre
   end
 
-  def show_movies
-    
+  def movies
+    Movie.all.select { |movie| movie.genre == self }
   end
 
 end
