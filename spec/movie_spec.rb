@@ -1,4 +1,5 @@
-require 'pry'
+require 'spec_helper'
+
 describe Movie do
   let (:sagar) { User.new("Sagar", "New York") }
   let (:action) { Genre.new("Action") }

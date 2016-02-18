@@ -1,4 +1,5 @@
-require 'pry'
+require 'spec_helper'
+
 describe User do
   let(:user) { User.new("Sagar", "New York") }
   let(:library) { Library.new(user) }
