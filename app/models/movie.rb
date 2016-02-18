@@ -1,10 +1,14 @@
 class Movie
-  attr_reader :title, :genre, :libraries
+  attr_reader :title, :genre, :release_year, :rating, :score, :libraries
   @@all = []
 
-  def initialize(title, genre)
-    @title = title
-    @genre = genre
+  def initialize(movie_data)
+    @title = movie_data[:title]
+    @genre = movie_data[:genre]
+    @release_year = movie_data[:year]
+    @rating = movie_data[:rated]
+    @score = movie_data[:score]
+
     @libraries = []
     @@all << self
   end

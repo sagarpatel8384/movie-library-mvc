@@ -27,7 +27,7 @@ describe User do
     end
   end
 
-  describe '#add_movie=' do
+  describe '#add_movie' do
 
     before do
       library
